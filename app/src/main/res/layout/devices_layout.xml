@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Name section-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/name_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/card_margin"
+        app:cardBackgroundColor="@color/cardBackgroundColor"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/regular_padding"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:hint="@string/name_hint"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:textSize="@dimen/regular_text_size"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+    </android.support.v7.widget.CardView>
+    <!--Name section-->
+
+    <!--Buttons section-->
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_below="@+id/name_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/regular_margin_vertical"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/card_margin"
+            app:cardBackgroundColor="@color/cardBackgroundColor"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+            <Button
+                android:id="@+id/selectAll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/select_all_btn_text"
+                android:textAllCaps="false"
+                android:textColor="@color/btnTextColor"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:background="?attr/selectableItemBackground"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_weight="1"
+            android:layout_margin="@dimen/card_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/cardBackgroundColor"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+            <Button
+                android:id="@+id/deselectAll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/btnTextColor"
+                android:text="@string/deselect_all_btn_text"
+                android:textAllCaps="false"
+                android:fontFamily="@font/open_sans_semi_bold"
+                android:background="?attr/selectableItemBackground" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <!--Buttons section-->
+
+    <!--Device title section-->
+        <TextView
+            android:id="@+id/listTitle"
+            android:layout_below="@+id/buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/regular_margin_horizontal"
+            android:layout_marginLeft="@dimen/regular_margin_horizontal"
+            android:layout_marginTop="@dimen/regular_margin_vertical"
+            android:layout_marginBottom="@dimen/regular_margin_vertical"
+            android:textSize="@dimen/title_text_size"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/open_sans_semi_bold"
+            android:text="@string/devices_title"/>
+    <!--Device title section-->
+
+    <!--Device list section-->
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/listTitle"
+        android:layout_margin="@dimen/card_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/cardBackgroundColor"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/regular_text_size"
+                android:paddingStart="@dimen/padding_5dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/regular_padding"
+                android:paddingTop="@dimen/regular_padding"
+                android:background="@color/cardBackgroundColor"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawablePadding="@dimen/padding_5dp"
+                android:hint="@string/search_hint"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/open_sans_regular"/>
+            <ListView
+                android:id="@+id/devices_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <!--Device list section-->
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">alertsTest</string>
+    <string name="title_devices">Devices</string>
+    <string name="title_type">Type</string>
+    <string name="title_geofencing">Geofencing</string>
+    <string name="title_schedule">Schedule</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="name_hint">Name*:</string>
+    <string name="search_hint">Search</string>
+    <string name="devices_title">Devices</string>
+    <string name="geofences_title">Geofences</string>
+    <string name="select_all_btn_text">Select all</string>
+    <string name="deselect_all_btn_text">Deselect all</string>
+    <string name="zoom_out_btn_text">Zoom Out</string>
+    <string name="zoom_in_btn_text">Zoom In</string>
+</resources>

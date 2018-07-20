@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_margin="@dimen/card_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/cardBackgroundColor"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@color/greyLight"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_textView"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="is simply dummy text of the printing and typesetting industry."
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/open_sans_regular"
+                    android:textSize="14dp"
+                    android:paddingStart="5dp"
+                    tools:ignore="RtlSymmetry" />
+
+                <CheckBox
+                    android:id="@+id/item_checkBox"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:width="0dp"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/item_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/regular_text_size"
+                android:paddingStart="@dimen/padding_5dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/regular_padding"
+                android:paddingTop="@dimen/regular_padding"
+                android:background="@color/grey2"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:fontFamily="@font/open_sans_regular"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/explain_textView"
+        android:layout_below="@+id/card"
+        android:text="is simply dummy text of the printing and typesetting industry."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"/>
+
+</RelativeLayout>

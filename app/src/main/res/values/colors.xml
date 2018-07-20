@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blue">#0000ff</color>
+    <color name="blueDark">#1b99bd</color>
+
+    <color name="grey">#777777</color>
+    <color name="greyDarker">#555555</color>
+    <color name="greyDark">#777777</color>
+    <color name="grey1">#494848</color>
+    <color name="grey2">#bbbbbb</color>
+    <color name="grey3">#cccccc</color>
+    <color name="divider_color">#cecccc</color>
+    <color name="greyLightest">#eeeeee</color>
+    <color name="greyLight">#f1f0f0</color>
+    <color name="separator_color">#e1dfdf</color>
+
+    <color name="white1">#ffffff</color>
+    <color name="whiteTransparent60">#99ffffff</color>
+    <color name="whiteDark">#f9f9f9</color>
+
+    <color name="green">#008000</color>
+    <color name="yellow">#ffff00</color>
+
+    <color name="red">#dd4242</color>
+
+    <color name="orange">#ffa500</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="textPrimaryColor">#000</color>
+
+    <color name="cardBackgroundColor">#f9f9f9</color>
+    <color name="boxSeparator">#e5e4e7</color>
+    <color name="btnTextColor">#4896b9</color>
+</resources>
